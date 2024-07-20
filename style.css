@@ -26,6 +26,26 @@ body {
 
 .sidebar {
     grid-row: 1 / -1;
+    background-color: var(--primary-accent-color);
+    color: white;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+
 }
 
 .upper-header {
@@ -54,9 +74,4 @@ body {
 
 .trending-card {
     display: flex;
-}
-
-.small-pfp,
-.large-pfp {
-    height: 50px;
 }
