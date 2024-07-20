@@ -1,3 +1,10 @@
+:root {
+    --primary-accent-color: #1992D4;
+    --secondary-accent-color: #F1B01C;
+    --background-color: #E2E8F0;
+    --text-color: #A1A1A1;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +18,42 @@ button {
 
 body {
     line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 7fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+}
+
+.upper-header {
+    display: flex;
+}
+
+.lower-header {
+    display: flex;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending-card {
+    display: flex;
 }
 
 .small-pfp,
