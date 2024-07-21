@@ -19,7 +19,7 @@ button {
 body {
     line-height: 1.5;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 7fr;
     height: 100vh;
 }
@@ -54,6 +54,83 @@ h1 {
 
 .lower-header {
     display: flex;
+}
+
+.small-pfp,
+.large-pfp {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.small-pfp {
+    height: 48px;
+    width: 48px;
+}
+
+.large-pfp {
+    height: 72px;
+    width: 72px;
+}
+
+.header {
+    margin: 0 24px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    justify-content: center;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-button {
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 1rem;
+    width: 1rem;
+}
+
+.search-bar {
+    border: none;
+    border-radius: 16px;
+    background-color: var(--background-color);
+}
+
+.account-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-intro {
+    display: flex;
+    gap: 8px;
+}
+
+.greeting-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.text-button {
+    border: none;
+    background-color: var(--primary-accent-color);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 16px;
+}
+
+.text-button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: center;
 }
 
 .main-content {
