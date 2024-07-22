@@ -148,7 +148,6 @@ h1 {
 }
 
 .project-container {
-    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -162,8 +161,23 @@ h1 {
     border-left: 8px solid var(--secondary-accent-color);
 }
 
-.project-card p {
+p {
     color: var(--text-color);
+}
+
+.announcements {
+    display: grid;
+}
+
+.announcement-container {
+    display: grid;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.announcement-card:not(:last-child) {
+    border-bottom: 2px solid var(--background-color);
 }
 
 .trending-card {
