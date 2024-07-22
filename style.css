@@ -2,7 +2,7 @@
     --primary-accent-color: #1992D4;
     --secondary-accent-color: #F1B01C;
     --background-color: #E2E8F0;
-    --text-color: #A1A1A1;
+    --text-color: #636363;
 }
 
 * {
@@ -135,18 +135,35 @@ h1 {
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--background-color);
+    gap: 16px;
 }
 
 .projects {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .project-container {
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 8px solid var(--secondary-accent-color);
+}
+
+.project-card p {
+    color: var(--text-color);
 }
 
 .trending-card {
