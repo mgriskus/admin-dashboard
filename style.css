@@ -165,19 +165,31 @@ p {
     color: var(--text-color);
 }
 
-.announcements {
+.announcements,
+.trending {
     display: grid;
+    grid-template-rows: auto 1fr;
 }
 
-.announcement-container {
+.announcement-container,
+.trending-container {
     display: grid;
     background-color: white;
     padding: 12px;
     border-radius: 8px;
 }
 
+.announcement-container {
+    grid-template-rows: repeat(3, 1fr);
+}
+
 .announcement-card:not(:last-child) {
     border-bottom: 2px solid var(--background-color);
+}
+
+.trending-container {
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
 }
 
 .trending-card {
