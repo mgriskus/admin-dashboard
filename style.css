@@ -3,6 +3,8 @@
     --secondary-accent-color: #F1B01C;
     --background-color: #E2E8F0;
     --text-color: #636363;
+    --shadow-color: #CDD2D9;
+    --shadow: 0 4px 8px var(--shadow-color);
 }
 
 * {
@@ -74,6 +76,8 @@ h1 {
     grid-template-columns: 5fr 3fr;
     justify-content: center;
     row-gap: 12px;
+    z-index: 1;
+    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .search-container {
@@ -158,6 +162,7 @@ h1 {
     padding: 12px;
     border-radius: 8px;
     border-left: 8px solid var(--secondary-accent-color);
+    box-shadow: var(--shadow);
 }
 
 p {
@@ -178,6 +183,7 @@ p {
     padding: 12px;
     border-radius: 8px;
     gap: 8px;
+    box-shadow: var(--shadow);
 }
 
 .announcement-container {
